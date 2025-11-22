@@ -67,26 +67,27 @@ An Expense Tracker application built with React, Node.js, Express, and MongoDB t
    cd expense-tracker
    ```
 
-2. Install dependencies:
+2. Setup & Start the Backend Server:
 ```bash
+   cd backend
    npm install
-   # or
-   yarn install
+   npm start
 ```
-
-3. Set up environment variables:
+3. Setup & Start the Frontend Server:
+```bash
+   cd frontend
+   npm install
+   npm start
+```
+4. Set up environment variables:
    Create a `.env` file in the root directory and add the following:
 ```env
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret
+   PORT=5000
 ```
 
-4. Start the development server:
-```bash
-   npm run dev
-   # or
-   yarn dev
-```
+
 
 ## Usage
 1. Register a new account or log in with an existing account.
