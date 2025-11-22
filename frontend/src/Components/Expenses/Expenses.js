@@ -33,7 +33,7 @@ function Expenses() {
                                 date={date} 
                                 type={lowerType}
                                 category={category} 
-                                indicatorColor="var(--color-red)"
+                                indicatorColor="red"
                                 deleteItem={deleteExpense}
                             />
                         })}
