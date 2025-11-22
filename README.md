@@ -63,7 +63,7 @@ An Expense Tracker application built with React, Node.js, Express, and MongoDB t
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/expense-tracker.git
+   git clone https://github.com/manish3-4/Expense_Tracker.git
    cd expense-tracker
    ```
 
