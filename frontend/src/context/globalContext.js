@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import { toast, Toaster } from 'react-hot-toast';
 
-const BASE_URL = "http://localhost:5000/api/v1/";
+const BASE_URL = "https://expense-tracker-sd5w.onrender.com/api/v1/";
 
 const GlobalContext = React.createContext();
 
@@ -71,7 +71,7 @@ export const GlobalProvider = ({ children }) => {
   // Check user authentication status
   const checkUser = async () => {
     try {
-      const { data } = await axios.post(`http://localhost:5000`,{}, {
+      const { data } = await axios.post(`${BASE_URL}`, {}, {
         withCredentials: true,
       });
       if (data.status) {
