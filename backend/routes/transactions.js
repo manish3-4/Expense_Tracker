@@ -5,6 +5,9 @@ const { checkUser, register, login } = require('../controllers/user');
 const router = require('express').Router()
 
 router.post('/api/v1/add-income', addIncome)
+    .get('/', (req, res) => {
+        res.send('Welcome to the backend!');
+    })
     .get('/api/v1/get-incomes', getIncomes)
     .delete('/api/v1/delete-income/:id', deleteIncome)
     .post('/api/v1/add-expense', addExpense)
