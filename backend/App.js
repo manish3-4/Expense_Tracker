@@ -6,11 +6,11 @@ const cookieParser = require("cookie-parser");
 const app = express();
 require("dotenv").config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://expensetrakr.netlify.app"], // Allow localhost and deployed frontend
+    origin: true,
     methods: ["GET", "POST", "DELETE"],
     credentials: true,
   }),
